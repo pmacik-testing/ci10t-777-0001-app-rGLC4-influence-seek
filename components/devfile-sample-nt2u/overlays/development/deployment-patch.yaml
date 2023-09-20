@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-nt2u
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0001-tenant/ci10t-777-0001-app/devfile-sample-nt2u@sha256:0d97fcfa538500b0efde19adfdc4e4ade48887629d8dfbb744701b74e5ddb375
+        name: my-nodejs
+        resources: {}
+status: {}
